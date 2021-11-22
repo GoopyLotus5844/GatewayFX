@@ -1,0 +1,10 @@
+#my-pane{
+    -fx-background-color: #00FF00;
+}
+
+#myButton{
+    -fx-graphic: url("delete.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 32 32;
+    -fx-background-position: center;
+}
