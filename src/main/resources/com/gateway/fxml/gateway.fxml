@@ -8,7 +8,7 @@
 <?import com.gateway.main.DraggableNode?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.gateway.main.HelloController"
+            fx:controller="com.gateway.controllers.GatewayController"
             prefHeight="400.0" prefWidth="600.0">
     <top>
         <Pane prefHeight="50" id="toolbar">
@@ -18,12 +18,7 @@
     <center>
         <Pane fx:id="paneCenter">
             <Canvas fx:id="canvas"/>
-            <DraggableNode prefHeight="100" prefWidth="75" fx:id="paneProperties">
-                <VBox>
-                    <Button>Hello</Button>
-                    <Text>Cool</Text>
-                </VBox>
-            </DraggableNode>
+                <fx:include fx:id="paneProperties" source="properties.fxml"/>
         </Pane>
     </center>
 </BorderPane>

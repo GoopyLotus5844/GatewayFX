@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import com.gateway.main.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<DraggableNode xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gateway.controllers.PropertiesController">
 
-</AnchorPane>
+    <VBox style="-fx-background-color: #FF0000">
+        <VBox fx:id="thing" style="-fx-background-color: #0000FF" prefHeight="30">
+            <Text>Properties</Text>
+        </VBox>
+        <VBox style="-fx-padding: 10 10 10 10">
+            <Button onAction="#buttonCool">Cool beans</Button>
+            <Text fx:id="textCounter">1</Text>
+        </VBox>
+    </VBox>
+
+</DraggableNode>

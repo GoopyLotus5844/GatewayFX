@@ -5,4 +5,6 @@ module com.example.gatewayfx {
 
     opens com.gateway.main to javafx.fxml;
     exports com.gateway.main;
+    exports com.gateway.controllers;
+    opens com.gateway.controllers to javafx.fxml;
 }

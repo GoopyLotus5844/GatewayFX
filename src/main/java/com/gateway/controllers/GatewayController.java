@@ -1,13 +1,15 @@
-package com.gateway.main;
+package com.gateway.controllers;
 
+import com.gateway.main.DraggableNode;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
-public class HelloController {
+public class GatewayController {
 
     @FXML
     public Canvas canvas;
