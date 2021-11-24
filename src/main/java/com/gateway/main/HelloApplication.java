@@ -32,5 +32,6 @@ public class HelloApplication extends Application {
     /*
     TODO
     Make properties box not draggable outside of canvas
+    Figure out how to nest controllers
      */
 }

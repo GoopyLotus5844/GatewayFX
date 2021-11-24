@@ -8,7 +8,7 @@
 <DraggableNode xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gateway.controllers.PropertiesController">
 
     <VBox style="-fx-background-color: #FF0000">
-        <VBox fx:id="thing" style="-fx-background-color: #0000FF" prefHeight="30">
+        <VBox style="-fx-background-color: #0000FF" prefHeight="30">
             <Text>Properties</Text>
         </VBox>
         <VBox style="-fx-padding: 10 10 10 10">

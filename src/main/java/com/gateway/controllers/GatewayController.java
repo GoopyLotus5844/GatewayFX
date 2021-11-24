@@ -4,6 +4,7 @@ import com.gateway.main.DraggableNode;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.SplitPane;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -16,6 +17,7 @@ public class GatewayController {
 
     @FXML
     public DraggableNode paneProperties;
+    public SplitPane paneSplit;
 
     @FXML
     private ToggleButton buttonDelete;

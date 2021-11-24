@@ -35,20 +35,20 @@
         </graphic>
     </Button>
     <Separator orientation="VERTICAL"/>
-    <Button>
+    <ToggleButton fx:id="buttonSelect">
         <graphic>
             <ImageView>
                 <Image url="@../style/select.png"/>
             </ImageView>
         </graphic>
-    </Button>
-    <Button>
+    </ToggleButton>
+    <ToggleButton fx:id="buttonPan">
         <graphic>
             <ImageView>
                 <Image url="@../style/pan.png"/>
             </ImageView>
         </graphic>
-    </Button>
+    </ToggleButton>
     <Separator orientation="VERTICAL"/>
     <Button>
         <graphic>
