@@ -11,9 +11,7 @@
             fx:controller="com.gateway.controllers.GatewayController"
             prefHeight="400.0" prefWidth="600.0">
     <top>
-        <Pane prefHeight="50" id="toolbar">
-            <ToggleButton fx:id="buttonDelete" onAction="#onDeleteButton"/>
-        </Pane>
+        <fx:include source="toolbar.fxml"/>
     </top>
     <center>
         <Pane fx:id="paneCenter">

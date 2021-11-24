@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<ToolBar xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="com.gateway.controllers.ToolbarController"
+         prefHeight="50.0">
+
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/new_file.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/open_file.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/save_file.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Separator orientation="VERTICAL"/>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/select.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/pan.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Separator orientation="VERTICAL"/>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/undo.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/redo.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/cut.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/copy.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/paste.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Separator orientation="VERTICAL"/>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/delete.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/rotate_counter.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button>
+        <graphic>
+            <ImageView>
+                <Image url="@../style/rotate.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</ToolBar>
