@@ -10,11 +10,11 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.gateway.controllers.GatewayController">
     <top>
-        <fx:include source="toolbar.fxml"/>
+        <fx:include fx:id="toolbar" source="toolbar.fxml"/>
     </top>
     <center>
         <SplitPane fx:id="paneSplit" dividerPositions="0.1">
-            <VBox/>
+            <fx:include source="components.fxml"/>
             <Pane fx:id="paneCenter">
                 <Canvas fx:id="canvas"/>
                 <fx:include fx:id="paneProperties" source="properties.fxml"/>

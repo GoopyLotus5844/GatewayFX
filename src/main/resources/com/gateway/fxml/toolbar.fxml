@@ -86,7 +86,7 @@
         </graphic>
     </Button>
     <Separator orientation="VERTICAL"/>
-    <Button>
+    <Button onAction="#onDelete">
         <graphic>
             <ImageView>
                 <Image url="@../style/delete.png"/>
