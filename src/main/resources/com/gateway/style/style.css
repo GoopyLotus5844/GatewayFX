@@ -1,10 +1,18 @@
-#my-pane{
+#toolbar{
     -fx-background-color: #00FF00;
 }
 
-#myButton{
+#buttonDelete{
     -fx-graphic: url("delete.png");
     -fx-background-repeat: no-repeat;
     -fx-background-size: 32 32;
     -fx-background-position: center;
+}
+
+#paneProperties{
+    -fx-background-color: #334488;
+}
+
+#paneCenter{
+    -fx-background-color: #556677;
 }

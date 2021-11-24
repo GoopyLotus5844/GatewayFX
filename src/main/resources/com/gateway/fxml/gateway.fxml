@@ -3,13 +3,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.text.Text?>
+<?import com.gateway.main.DraggableNode?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.gateway.main.HelloController"
             prefHeight="400.0" prefWidth="600.0">
     <top>
-        <Pane prefHeight="30" id="my-pane">
-            <ToggleButton fx:id="myButton"/>
+        <Pane prefHeight="50" id="toolbar">
+            <ToggleButton fx:id="buttonDelete" onAction="#onDeleteButton"/>
         </Pane>
     </top>
+    <center>
+        <Pane fx:id="paneCenter">
+            <Canvas fx:id="canvas"/>
+            <DraggableNode prefHeight="100" prefWidth="75" fx:id="paneProperties">
+                <VBox>
+                    <Button>Hello</Button>
+                    <Text>Cool</Text>
+                </VBox>
+            </DraggableNode>
+        </Pane>
+    </center>
 </BorderPane>
