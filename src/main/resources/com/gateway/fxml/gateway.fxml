@@ -8,7 +8,10 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.gateway.controllers.MainController">
     <top>
-        <fx:include fx:id="toolbar" source="toolbar.fxml"/>
+        <VBox>
+            <fx:include fx:id="menuBar" source="menu_bar.fxml"/>
+            <fx:include fx:id="toolbar" source="toolbar.fxml"/>
+        </VBox>
     </top>
     <center>
         <SplitPane fx:id="paneSplit">

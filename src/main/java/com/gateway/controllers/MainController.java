@@ -6,6 +6,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToolBar;
@@ -21,9 +22,14 @@ public class MainController {
     @FXML
     public DraggableNode paneProperties;
 
+    @FXML
     public SplitPane paneSplit;
 
+    @FXML
     public ToolBar toolbar;
+
+    @FXML
+    public MenuBar menuBar;
 
     @FXML
     private Pane paneCenter;
