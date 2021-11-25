@@ -29,7 +29,6 @@ public class DraggableNode extends Pane {
     }
 
     private void init() {
-
         onMousePressedProperty().set(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -79,7 +78,6 @@ public class DraggableNode extends Pane {
         onMouseClickedProperty().set(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-
                 dragging = false;
             }
         });

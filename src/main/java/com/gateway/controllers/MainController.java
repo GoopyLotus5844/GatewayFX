@@ -1,6 +1,8 @@
 package com.gateway.controllers;
 
 import com.gateway.main.DraggableNode;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -31,25 +33,24 @@ public class MainController {
 
     @FXML
     public void initialize(){
-        System.out.println("Absolutely froggers");
         canvas.widthProperty().bind(paneCenter.widthProperty());
         canvas.heightProperty().bind(paneCenter.heightProperty());
+        paneCenter.widthProperty().addListener((observableValue, number, t1) -> {
+            paneProperties.setLayoutX(t1.intValue() - (number.intValue() - paneProperties.getLayoutX()));
+        });
         toolbarController.addMain(this);
     }
 
     public void drawThing(boolean active){
-        System.out.println("Here");
         GraphicsContext g = canvas.getGraphicsContext2D();
         if(active) g.setFill(Color.BLUE);
         else g.setFill(Color.RED);
-        System.out.println(canvas.getWidth());
         g.fillOval(0, 0, 50, 50);
-        paneProperties.setLayoutX(paneCenter.getWidth() - paneProperties.getWidth());
     }
 
     public void finalGUISetup(){
-        paneSplit.setDividerPosition(0, 0.15);
-        paneProperties.setLayoutX(paneCenter.getWidth());
-        System.out.println(canvas.getWidth());
+        paneSplit.setDividerPosition(0, 0.20);
+        paneProperties.setLayoutX(paneCenter.getWidth() - paneProperties.getWidth() - 10);
+        paneProperties.setLayoutY(10);
     }
 }

@@ -2,6 +2,8 @@ package com.gateway.main;
 
 import com.gateway.controllers.MainController;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
@@ -22,8 +24,17 @@ public class Gateway extends Application {
         stage.setWidth(bounds.getWidth());
         stage.setHeight(bounds.getHeight());
         stage.setScene(scene);
+        stage.showingProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if (newValue) {
+                    ((MainController) loader.getController()).finalGUISetup();
+                    observable.removeListener(this);
+                }
+            }
+        });
         stage.show();
-        ((MainController) loader.getController()).finalGUISetup();
+
     }
 
     public static void main(String[] args) {

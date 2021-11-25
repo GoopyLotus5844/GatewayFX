@@ -9,40 +9,73 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<VBox xmlns="http://javafx.com/javafx"
+<ScrollPane fitToWidth="true" xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.gateway.controllers.ComponentsController"
-      prefHeight="400.0" prefWidth="600.0">
-
-    <TitledPane text="Logic gates">
-        <VBox>
-            <Button>
-                <graphic>
-                    <ImageView>
-                        <Image url="@../style/delete.png"/>
-                    </ImageView>
-                </graphic>
-            </Button>
-            <Button>World</Button>
-        </VBox>
-    </TitledPane>
-    <TitledPane text="Input/Output">
-        <VBox>
-            <Button>Hello</Button>
-            <Button>World</Button>
-        </VBox>
-    </TitledPane>
-    <TitledPane text="Advanced">
-        <VBox>
-            <Button>Hello</Button>
-            <Button>World</Button>
-        </VBox>
-    </TitledPane>
-    <TitledPane text="Other">
-        <VBox>
-            <Button>Hello</Button>
-            <Button>World</Button>
-        </VBox>
-    </TitledPane>
-
-</VBox>
+      fx:controller="com.gateway.controllers.ComponentsController">
+    <VBox>
+        <TitledPane text="Logic gates">
+            <GridPane hgap="10" vgap="10">
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="0">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="1">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="0">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button GridPane.rowIndex="1" GridPane.columnIndex="2">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@../style/delete.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </GridPane>
+        </TitledPane>
+        <TitledPane text="Input/Output">
+            <VBox>
+                <Button>Hello</Button>
+                <Button>World</Button>
+            </VBox>
+        </TitledPane>
+        <TitledPane text="Advanced">
+            <VBox>
+                <Button>Hello</Button>
+                <Button>World</Button>
+            </VBox>
+        </TitledPane>
+        <TitledPane text="Other">
+            <VBox>
+                <Button>Hello</Button>
+                <Button>World</Button>
+            </VBox>
+        </TitledPane>
+    </VBox>
+</ScrollPane>

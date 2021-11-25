@@ -1,12 +1,12 @@
-#buttonDelete{
-    -fx-graphic: url("delete.png");
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: 32 32;
-    -fx-background-position: center;
+#paneProperties{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10 10 10 10;
 }
 
-#paneProperties{
-    -fx-background-color: #334488;
+#headerProperties{
+    -fx-background-color: #999999;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 10 10 0 0
 }
 
 #paneCenter{
