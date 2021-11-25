@@ -8,12 +8,12 @@
 <?import com.gateway.main.DraggableNode?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.gateway.controllers.GatewayController">
+            fx:controller="com.gateway.controllers.MainController">
     <top>
         <fx:include fx:id="toolbar" source="toolbar.fxml"/>
     </top>
     <center>
-        <SplitPane fx:id="paneSplit" dividerPositions="0.1">
+        <SplitPane fx:id="paneSplit">
             <fx:include source="components.fxml"/>
             <Pane fx:id="paneCenter">
                 <Canvas fx:id="canvas"/>

@@ -27,16 +27,22 @@
         </VBox>
     </TitledPane>
     <TitledPane text="Input/Output">
-        <Button>Hello</Button>
-        <Button>World</Button>
+        <VBox>
+            <Button>Hello</Button>
+            <Button>World</Button>
+        </VBox>
     </TitledPane>
     <TitledPane text="Advanced">
-        <Button>Hello</Button>
-        <Button>World</Button>
+        <VBox>
+            <Button>Hello</Button>
+            <Button>World</Button>
+        </VBox>
     </TitledPane>
     <TitledPane text="Other">
-        <Button>Hello</Button>
-        <Button>World</Button>
+        <VBox>
+            <Button>Hello</Button>
+            <Button>World</Button>
+        </VBox>
     </TitledPane>
 
 </VBox>

@@ -11,7 +11,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
-public class GatewayController {
+public class MainController {
 
     @FXML
     public Canvas canvas;
@@ -34,7 +34,7 @@ public class GatewayController {
         System.out.println("Absolutely froggers");
         canvas.widthProperty().bind(paneCenter.widthProperty());
         canvas.heightProperty().bind(paneCenter.heightProperty());
-        toolbarController.addGateway(this);
+        toolbarController.addMain(this);
     }
 
     public void drawThing(boolean active){
@@ -44,5 +44,12 @@ public class GatewayController {
         else g.setFill(Color.RED);
         System.out.println(canvas.getWidth());
         g.fillOval(0, 0, 50, 50);
+        paneProperties.setLayoutX(paneCenter.getWidth() - paneProperties.getWidth());
+    }
+
+    public void finalGUISetup(){
+        paneSplit.setDividerPosition(0, 0.15);
+        paneProperties.setLayoutX(paneCenter.getWidth());
+        System.out.println(canvas.getWidth());
     }
 }

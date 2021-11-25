@@ -1,5 +1,6 @@
 package com.gateway.main;
 
+import com.gateway.controllers.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -9,20 +10,20 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Gateway extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/gateway/fxml/gateway.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        FXMLLoader loader = new FXMLLoader(Gateway.class.getResource("/com/gateway/fxml/gateway.fxml"));
+        Scene scene = new Scene(loader.load());
         scene.getStylesheets().add(getClass().getResource("/com/gateway/style/style.css").toExternalForm());
-
         stage.setTitle("GatewayFX");
         Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
         stage.setWidth(bounds.getWidth());
         stage.setHeight(bounds.getHeight());
         stage.setScene(scene);
         stage.show();
+        ((MainController) loader.getController()).finalGUISetup();
     }
 
     public static void main(String[] args) {

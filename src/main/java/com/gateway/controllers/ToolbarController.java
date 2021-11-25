@@ -9,20 +9,21 @@ public class ToolbarController {
     public ToggleButton buttonSelect;
     public ToggleButton buttonPan;
 
-    private GatewayController gatewayController;
+    private MainController mainController;
 
     @FXML
     public void initialize(){
         ToggleGroup group = new ToggleGroup();
         buttonSelect.setToggleGroup(group);
         buttonPan.setToggleGroup(group);
+        buttonSelect.setSelected(true);
     }
 
-    public void addGateway(GatewayController controller){
-        gatewayController = controller;
+    public void addMain(MainController controller){
+        mainController = controller;
     }
 
     public void onDelete(ActionEvent actionEvent) {
-        gatewayController.drawThing(buttonSelect.isSelected());
+        mainController.drawThing(buttonSelect.isSelected());
     }
 }
