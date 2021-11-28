@@ -1,4 +1,4 @@
-package com.gateway.main;
+package com.gateway.nodes;
 
 import javafx.event.EventHandler;
 import javafx.scene.Node;
@@ -29,7 +29,7 @@ public class DraggableNode extends Pane {
     }
 
     private void init() {
-        onMousePressedProperty().set(new EventHandler<MouseEvent>() {
+        setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
 
@@ -47,7 +47,7 @@ public class DraggableNode extends Pane {
         });
 
         //Event Listener for MouseDragged
-        onMouseDraggedProperty().set(new EventHandler<MouseEvent>() {
+        setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
 
@@ -75,7 +75,7 @@ public class DraggableNode extends Pane {
             }
         });
 
-        onMouseClickedProperty().set(new EventHandler<MouseEvent>() {
+        setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 dragging = false;

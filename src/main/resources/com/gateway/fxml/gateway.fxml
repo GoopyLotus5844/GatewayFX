@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.canvas.Canvas?>
+<?import com.gateway.nodes.CircuitCanvas?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.gateway.controllers.MainController">
@@ -17,7 +18,7 @@
         <SplitPane fx:id="paneSplit">
             <fx:include source="components.fxml"/>
             <Pane fx:id="paneCenter">
-                <Canvas fx:id="canvas"/>
+                <CircuitCanvas fx:id="canvas"/>
                 <fx:include fx:id="paneProperties" source="properties.fxml"/>
             </Pane>
         </SplitPane>

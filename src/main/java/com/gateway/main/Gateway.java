@@ -43,7 +43,8 @@ public class Gateway extends Application {
 
     /*
     TODO
+    Make camera system
+    Make component buttons
     Make properties box not draggable outside of canvas
-    Figure out how to nest controllers
      */
 }

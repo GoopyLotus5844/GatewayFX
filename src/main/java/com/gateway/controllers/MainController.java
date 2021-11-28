@@ -1,23 +1,20 @@
 package com.gateway.controllers;
 
-import com.gateway.main.DraggableNode;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+import com.gateway.nodes.CircuitCanvas;
+import com.gateway.nodes.DraggableNode;
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.SplitPane;
-import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToolBar;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 
 public class MainController {
 
     @FXML
-    public Canvas canvas;
+    public CircuitCanvas canvas;
 
     @FXML
     public DraggableNode paneProperties;
